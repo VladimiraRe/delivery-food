@@ -1,0 +1,23 @@
+@mixin font-roboto($size, $weight, $color, $lineheight) {
+    font-family: "Roboto", serif;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    line-height: $lineheight;
+}
+
+@mixin font-sfprodisplay($size, $weight, $color, $lineheight) {
+    font-family: "SFProDisplay", serif;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    line-height: $lineheight;
+}
+
+@mixin font-roboto($size, $weight, $color, $lineheight) {
+    font-family: "Roboto", serif;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    line-height: $lineheight;
+}

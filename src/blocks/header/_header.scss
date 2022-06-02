@@ -1,0 +1,39 @@
+.header {
+    padding: 44px 0 40px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 100.5px;
+        height: 36px;
+    }
+
+    &__location {
+        width: calc(690px/1440px*100vw);
+    }
+
+    &__user-icon {
+        width: 11.75px;
+        height: 12.44px;
+    }
+
+    &__basket-icon {
+        width: 14px;
+        height: 12.6px;
+    }
+
+    &__enter {
+        padding: 8px 16px;
+        background-color: $thirdColor;
+        border: 0;
+        border-radius: 2px;
+        //@include font-sfprodisplay(16px, 400, $fourthFontColor, 24px);
+    }
+
+    &__user-icon {
+        margin-right: 6.12px;
+    }
+}

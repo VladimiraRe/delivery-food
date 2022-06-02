@@ -1,0 +1,14 @@
+//Подключение normalize
+@import "_normalize.scss";
+
+//Подключение переменных
+@import "_var.scss";
+
+// //Подключение миксинов
+// @import "_mixins.scss";
+
+//Подключение базовых настроек
+@import "_settings.scss";
+
+//Подключение стилей шапки
+@import "../blocks/header/header";

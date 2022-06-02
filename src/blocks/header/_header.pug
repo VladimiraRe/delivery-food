@@ -1,16 +1,17 @@
 header.header 
     .container
-        svg.header__logo
-            use(xlink:href="./blocks/header/img/sprite.svg#logo")
-        form.header__form(action="#")
-            input.header__location(type="text")
+        .header__wrapper
+            svg.header__logo
+                use(xlink:href="./blocks/header/img/sprite.svg#logo")
+            form.header__form(action="#")
+                input.header__location(type="text" placeholder="Адрес доставки")
             .header__btns
                 button.header__enter
-                    svg.header__user
+                    svg.header__user-icon
                         use(xlink:href="./blocks/header/img/sprite.svg#user")
                     | Войти
                 button.header__backet
-                    svg.header__basket
+                    svg.header__basket-icon
                         use(xlink:href="./blocks/header/img/sprite.svg#basket")
                     | Корзина
 
