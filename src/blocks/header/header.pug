@@ -1,0 +1,17 @@
+header.header 
+    .container
+        //img.header__logo(src="./src/blocks/header/img/logo.svg", alt="Logo icon")
+        svg.header__logo
+            use(xlink:href="./sprite.svg#logo")
+        form.header__form(action="#")
+            input.header__location(type="text")
+            .header__btns
+                button.header__enter
+                    svg.header__user
+                        use(xlink:href="./sprite.svg#user")
+                    | Войти
+                button.header__backet
+                    svg.header__basket
+                        use(xlink:href="./sprite.svg#basket")
+                    | Корзина
+
