@@ -4,11 +4,16 @@
 //Подключение переменных
 @import "_var.scss";
 
-// //Подключение миксинов
-// @import "_mixins.scss";
+//Подключение миксинов
+@import "_mixins.scss";
 
 //Подключение базовых настроек
 @import "_settings.scss";
 
+//Подключение стилей кнопок
+@import "../components/btn/btn";
+
 //Подключение стилей шапки
 @import "../blocks/header/header";
+
+//Подключение стилей промо

@@ -6,12 +6,6 @@ header.header
             form.header__form(action="#")
                 input.header__location(type="text" placeholder="Адрес доставки")
             .header__btns
-                button.header__enter
-                    svg.header__user-icon
-                        use(xlink:href="./blocks/header/img/sprite.svg#user")
-                    | Войти
-                button.header__backet
-                    svg.header__basket-icon
-                        use(xlink:href="./blocks/header/img/sprite.svg#basket")
-                    | Корзина
+                include ../../components/btn/_enter.pug
+                include ../../components/btn/_basket.pug
 

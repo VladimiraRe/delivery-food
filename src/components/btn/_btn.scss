@@ -1,0 +1,18 @@
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: $thirdColor;
+    border: 0;
+    border-radius: 2px;
+    @include font-sfprodisplay(16px, 400, $fourthFontColor, 24px);
+
+    &--secondary {
+        outline: 1px solid $fourthColor;
+        outline-offset: -1px;
+        background-color: $secondaryColor;
+        @include font-sfprodisplay(16px, 400, $thirdFontColor, 24px);
+        margin-right: 0px;
+    }
+}
