@@ -1,0 +1,24 @@
+.promo {
+    &__wrapper {
+        background-color: $promoColor;
+        background-image: url("../blocks/restaurants/promo/promo.png");
+        background-position: left 480px top;
+        // background-size: 80%;
+        background-repeat: no-repeat;
+        padding: 68px 70px;
+        box-shadow: 0 7px 12px rgba(158, 158, 163, 0.1);
+        border-radius: 10px;
+    }
+
+    &__title {
+        max-width: 539px;
+        @include font-roboto(39px, 700, $primaryColor, 45.7px);
+        margin: 0 0 15.3px 0;
+    }
+
+    &__text {
+        max-width: 539px;
+        margin: 0;
+        @include font-roboto(24px, 400, $primaryColor, 28px);
+    }
+}

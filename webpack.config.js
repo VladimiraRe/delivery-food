@@ -30,6 +30,12 @@ module.exports = {
             chunks: 'all',
         },
     },
+    //Чтобы избежать ошибки размеров файлов, перенести в webpack.dev.js, когда будет разделение: 
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    },
     plugins: [
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css'
@@ -76,7 +82,7 @@ module.exports = {
             },
             {
                 test: /\.pug$/,
-                loader: 'pug-loader',
+                loader: '@webdiscus/pug-loader',
                 exclude: /(node_modules|bower_components)/,
             },
             {

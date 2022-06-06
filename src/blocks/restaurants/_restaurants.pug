@@ -1,0 +1,25 @@
+include ./_config.pug
+
+section.restaurants
+    // Секция с промо
+    include ./promo/_promo.pug
+    .container
+        .restaurants__title-wrap
+            h2.restaurants__title Рестораны
+            input(type="text", placeholder="Поиск блюд и ресторанов").restaurants__search
+        .restaurants__cards
+            each i in allRestaurants
+                .restaurants__card
+                    img(src=i.image, alt="Food photo").restaurants__img
+                    .restaurants__text
+                        .restaurants__heading
+                            .restaurants__name #{i.name}
+                            .restaurants__time #{i.time}
+                        .restaurants__info
+                            .restaurants__rating #{i.rating}
+                            .restaurants__price #{i.price}
+                            .restaurants__category #{i.category}
+
+
+
+

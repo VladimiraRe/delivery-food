@@ -1,0 +1,106 @@
+.restaurants {
+    padding: 18px 0 90px 0;
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+
+
+    &__title-wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 56px;
+        margin-bottom: 44px;
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__search {
+        padding: 5px 12px 5px 32px;
+        background-image: url("../blocks/restaurants/img/loupe.svg");
+        background-repeat: no-repeat;
+        background-position: left 11px center;
+        border: 0;
+        outline: 1px solid $fourthColor;
+        outline-offset: -1px;
+        border-radius: 2px;
+        max-width: 306px;
+        flex-grow: 1;
+        @include font-sfprodisplay(16px, 400, $fifthFontColor, 24px);
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px 24px;
+    }
+
+    &__card {
+        background-color: $secondaryColor;
+        width: 384px;
+        flex-grow: 1;
+        border-radius: 7px;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        height: 250px;
+    }
+
+    &__text {
+        padding: 20px 23px 35px 23px;
+    }
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    &__name {
+        @include font-roboto(24px, 700, $primaryFontColor, 32px);
+    }
+
+    &__time {
+        @include font-sfprodisplay(12px, 400, $fourthFontColor, 20px);
+        padding: 1px 8px;
+        background-color: $fifthColor;
+        align-self: center;
+        border-radius: 2px;
+    }
+    
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+
+    &__rating {
+        background-image: url("../blocks/restaurants/img/star.svg");
+        background-repeat: no-repeat;
+        background-position: left 0px top 7px;
+        padding-left: calc(7.5px + 14.7px);
+        margin-right: 26px;
+        @include font-roboto(18px, 700, $ratingColor, 32px);
+    }
+
+    &__price {
+        @include font-roboto(18px, 400, $secondaryFontColor, 32px);
+        margin-right: 10px;
+    }
+
+    &__category {
+        @include font-roboto(18px, 400, $secondaryFontColor, 32px);
+
+        &::before {
+            content: "";
+            width: 5px;
+            height: 5px;
+            background-color: $secondaryFontColor;
+            border-radius: 50%;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    }
+}

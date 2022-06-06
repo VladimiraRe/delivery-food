@@ -14,11 +14,6 @@
         margin-right: calc(102px/1440px*100vw);
     }
 
-    &__form {
-        flex-grow: 1;
-        margin-right: calc(87px/1440px*100vw);
-    }
-
     &__location {
         width: 100%;
         height: 40px;
@@ -31,6 +26,8 @@
         background-image: url("../blocks/header/img/home.svg");
         background-repeat: no-repeat;
         background-position: left 11px center;
+        flex-grow: 1;
+        margin-right: calc(87px/1440px*100vw);
     }
 
     &__btns {

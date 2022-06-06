@@ -1,11 +1,9 @@
 header.header 
     .container
         .header__wrapper
-            svg.header__logo
-                use(xlink:href="./blocks/header/img/sprite.svg#logo")
-            form.header__form(action="#")
-                input.header__location(type="text" placeholder="Адрес доставки")
+            img.header__logo(src=require("./img/logo.svg"), alt="Logo icon")
+            input.header__location(type="text" placeholder="Адрес доставки")
             .header__btns
-                include ../../components/btn/_enter.pug
-                include ../../components/btn/_basket.pug
+                include ../../components/btn/enter/_enter.pug
+                include ../../components/btn/basket/_basket.pug
 
