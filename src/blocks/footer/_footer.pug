@@ -1,0 +1,17 @@
+include ./_config.pug
+
+footer.footer
+    .container
+        .footer__wrap
+            .footer__links
+                img.footer__logo(src=require("./img/logo.svg"), alt="Logo icon")
+                nav.footer__nav
+                    for i in links
+                        a(href="#").footer__link #{i}
+            .footer__socials
+                a(href="#").footer__social
+                    img(src=require("./img/tg.svg"), alt="Telegram icon").footer__social-icon
+                a(href="#").footer__social
+                    img(src=require("./img/fb.svg"), alt="Facebook icon").footer__social-icon
+                a(href="#").footer__social
+                    img(src=require("./img/vk.svg"), alt="VK icon").footer__social-icon

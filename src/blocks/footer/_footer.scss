@@ -1,0 +1,48 @@
+.footer {
+    background-color: $secondaryColor;
+    padding: 66px 0;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 100.5px;
+        margin-right: 35.6px;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        @include font-roboto(18px, 400, $thirdFontColor, 21px);
+        text-decoration: none;
+
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+
+    &__socials {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__social {
+        text-decoration: none;
+        vertical-align: middle;
+
+        &:not(:last-child) {
+            margin-right: 21px;
+        }
+    }
+
+    &__social-icon {
+        max-height: 25px;
+        max-width: 35px;
+    }
+
+}

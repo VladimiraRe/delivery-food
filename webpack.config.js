@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require('path')
 
 let mode = 'development'
 if (process.env.NODE_ENV === 'production') {
@@ -20,7 +21,7 @@ module.exports = {
     devServer: {
         open: true,
         static: {
-            directory: './src',
+            directory: path.join(__dirname, "dist"),
             watch: true
         }
     },
