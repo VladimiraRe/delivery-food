@@ -41,6 +41,7 @@
         flex-grow: 1;
         border-radius: 7px;
         overflow: hidden;
+        text-decoration: none;
     }
 
     &__img {
@@ -61,6 +62,7 @@
 
     &__name {
         @include font-roboto(24px, 700, $primaryFontColor, 32px);
+        margin: 0;
     }
 
     &__time {
