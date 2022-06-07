@@ -5,6 +5,8 @@
     &__wrap {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
     &__logo {
@@ -12,9 +14,10 @@
         margin-right: 35.6px;
     }
 
-    &__links {
+    &__nav {
         display: flex;
         align-items: center;
+        margin-right: auto;
     }
 
     &__link {
@@ -41,8 +44,51 @@
     }
 
     &__social-icon {
-        max-height: 25px;
-        max-width: 35px;
+        height: 25px;
+        width: 35px;
     }
 
+}
+
+@media (max-width: 992px) {
+    .footer {
+        &__link {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .footer {
+        &__nav {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 45px 0;
+
+        &__logo {
+            margin-bottom: 20px;
+        }
+
+        &__nav {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 626px) {
+    .footer {
+        &__wrap {
+            justify-content: center;
+        }
+
+        &__nav {
+            margin-right: unset;
+        }
+    }
 }

@@ -6,12 +6,13 @@
     &__title-wrap {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin-top: 56px;
         margin-bottom: 44px;
     }
 
     &__title {
-        margin: 0;
+        margin: 0 20px 0 0;
     }
 
     &__search {
@@ -73,6 +74,7 @@
     &__info {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     &__rating {
@@ -87,10 +89,13 @@
     &__price {
         @include font-roboto(18px, 400, $secondaryFontColor, 32px);
         margin-right: 10px;
+        display: inline-block;
     }
 
     &__category {
         @include font-roboto(18px, 400, $secondaryFontColor, 32px);
+        white-space: normal;
+        display: inline-block;
 
         &::before {
             content: "";
@@ -101,6 +106,27 @@
             display: inline-block;
             vertical-align: middle;
             margin-right: 10px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .restaurants {
+        &__title-wrap {
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .restaurants {
+        &__search {
+            flex-basis: 100%;
+        }
+
+        &__title {
+            margin-bottom: 15px;
         }
     }
 }
