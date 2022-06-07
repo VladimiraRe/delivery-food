@@ -1,0 +1,22 @@
+include ./_config.pug
+
+.cart
+    .cart__dialog
+        .cart__header
+            h3.cart__title Корзина
+            button.cart__close &times;
+        .cart__body
+            for i in allFoods
+                .cart__row
+                    span.cart__food-name #{i.name}
+                    strong.cart__price #{i.price}
+                    .cart__counter
+                        button.cart__counter-btn -
+                        span.cart__count 1
+                        button.cart__counter-btn +
+        .cart__footer
+            span.cart__total 1250 ₽
+            .cart__finish
+                .cart__btn
+                    include ../../components/btn/checkout/_checkout.pug
+                include ../../components/btn/cancel/_cancel.pug

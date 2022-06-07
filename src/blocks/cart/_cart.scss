@@ -1,0 +1,156 @@
+.cart {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: $firstModalColor;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    &--active {
+        display: flex;
+    }
+
+    &__dialog {
+        width: calc(780px/1440px*100%);
+        background: $fourthFontColor;
+        border-radius: 5px;
+        padding: 41px 46px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 48px 0;
+    }
+
+    &__title {
+        @include font-roboto(36px, 700, $primaryFontColor, 42px);
+        margin: 0;
+    }
+
+    &__close {
+        background-color: transparent;
+        border: none;
+        @include font-roboto(36px, 700, $primaryFontColor, 42px);
+        cursor: pointer;
+    }
+
+    &__body {
+        margin-bottom: 53px;
+    }
+
+    &__name {
+        @include font-roboto(18px, 400, $primaryFontColor, 32px);
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 8px;
+        border-bottom: 1px solid $fourthColor;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__food-name {
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+
+    &__price {
+        margin-left: auto;
+        margin-right: 47px;
+        @include font-roboto(20px, 700, $primaryFontColor, 32px);
+    }
+
+    &__counter-btn {
+        background-color: transparent;
+        border: 1px solid $secondModalColor;
+        border-radius: 2px;
+        width: 39px;
+        height: 32px;
+        @include font-sfprodisplay(14px, 400, $secondModalColor, 22px);
+    }
+
+    &__count {
+        @include font-sfprodisplay(16px, 400, $primaryFontColor, 24px);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__total {
+        @include font-roboto(20px, 700, $sixthFontColor, 23px);
+        background-color: $fifthColor;
+        border-radius: 5px;
+        padding: 15px 20px;
+    }
+
+    &__btn {
+        display: inline-block;
+        margin-right: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cart {
+        &__dialog {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .cart {
+        &__dialog {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 549px) {
+    .cart {
+        &__price {
+            margin-left: unset;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .cart {
+        &__body {
+            margin-bottom: 30px;
+        }
+
+        &__total {
+            margin-bottom: 30px;
+        }
+
+        &__finish {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 345px) {
+    .cart {
+        &__btn {
+            margin-bottom: 10px;
+        }
+    }
+}

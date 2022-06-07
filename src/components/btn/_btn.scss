@@ -35,11 +35,17 @@
 
 @media (max-width: 420px) {
     .btn {
-        &:first-child {
-            margin-right: 5px;
-        }
-        &__text {
+        &__text--with-icon {
             display: none;
+        }
+    }
+}
+
+@media (max-width: 345px) {
+    .cart {
+
+        &__btn {
+            margin-bottom: 20px;
         }
     }
 }
