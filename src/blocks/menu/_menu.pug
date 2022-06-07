@@ -1,0 +1,20 @@
+include ./_confi.pug
+
+section.menu
+    .container
+        .menu__title-wrap
+            h2.menu__title Тануки
+            .menu__tags
+                span.menu__rating 4.8
+                span.menu__minprice От 900 ₽
+                span.menu__category Пицца и суши
+        .menu__cards
+            each i in allMenu
+                .menu__card
+                    img(src=i.image, alt="Food photo").menu__img
+                    .menu__info
+                        h3.menu__name #{i.name}
+                        span.menu__consist #{i.consist}
+                        .menu__buy
+                            include ../../components/btn/addtocart/_addtocart.pug
+                            span.menu__price #{i.price}

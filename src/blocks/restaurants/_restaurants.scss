@@ -13,6 +13,7 @@
 
     &__title {
         margin: 0 20px 0 0;
+        @include font-roboto(36px, 700, $primaryFontColor, 42px);
     }
 
     &__search {

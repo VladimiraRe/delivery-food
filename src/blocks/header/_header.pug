@@ -1,7 +1,8 @@
 header.header 
     .container
         .header__wrapper
-            img.header__logo(src=require("./img/logo.svg"), alt="Logo icon")
+            a(href="./index.html") 
+                img.header__logo(src=require("./img/logo.svg"), alt="Logo icon")
             input.header__location(type="text" placeholder="Адрес доставки")
             .header__btns
                 .header__enter
