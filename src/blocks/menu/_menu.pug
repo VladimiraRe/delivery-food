@@ -10,7 +10,7 @@ section.menu
                 span.menu__category Пицца и суши
         .menu__cards
             each i in allMenu
-                .menu__card
+                .menu__card.menu__card--hover
                     img(src=i.image, alt="Food photo").menu__img
                     .menu__info
                         h3.menu__name #{i.name}
